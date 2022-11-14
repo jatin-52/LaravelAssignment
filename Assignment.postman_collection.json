@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "82fcd161-b206-47ba-8511-f4024446af4a",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Score Board Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/score-board-user",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"score-board-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Score Board Users store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Jatin",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "test address",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/score-board-user/store",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"score-board-user",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Score Board Users delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:8000/api/score-board-user/destroy/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"score-board-user",
+						"destroy",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Score Board Users updateUserPoint",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "isPlus",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/score-board-user/updateUserPoint",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"score-board-user",
+						"updateUserPoint"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
